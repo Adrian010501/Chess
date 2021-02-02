@@ -41,6 +41,7 @@ public class Chess {
 		for(int i = 0; i < 8; i++) {
 			board[i][6] = 'P';
 		}
+		
 	}
 	
 	public static void move() {
