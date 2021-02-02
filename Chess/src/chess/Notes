@@ -1,1 +1,23 @@
-//Notes on chess
+Notes on chess
+
+Chess Class
+	playGame()
+		main method where everything starts
+		creates board
+		
+	move()
+		facilitates move
+		calls an input method getMove()
+		once move is received, calls move method specific for that piece
+	validateMove()
+		check if piece would land outside border or on top of piece of 
+		same color
+	pawnMove() queenMove() kingMove() ...
+		validates specific move for each piece
+	printBoard()
+		prints "|" and "_" to make board
+		each peice is just a char 'p' 'k' ...
+	checkMate()
+		checks if king is checked by any peice, if so, calls checkCheckMate
+		if king is not checked, makes sure there is atleast one possible move
+		where king would not be in check
