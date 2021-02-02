@@ -25,6 +25,11 @@ public class Chess {
 		for(int i = 0; i < 8; i++) {
 			board[i][1] = 'p';
 		}
+		for(int y = 2; y < 6; y++) {//Traversing vertically(rows)
+			for(int x = 0; x < 8; x++) {//Traversing horizontally(columns)
+				board[x][y] = '_';
+			}
+		}
 		board[0][7] = 'R';
 		board[1][7] = 'K';
 		board[2][7] = 'B';
@@ -45,10 +50,10 @@ public class Chess {
 	}
 	
 	public static void printBoard() {
-		for(int i = 0; i < 8; i++) {//Traversing vertically(rows)
-			for(int j = 0; j < 8;) {//Traversing horizontally(columns)
-				System.out.print("|" + board[i][j]);//Print data at i , j
-				if(j == 7)
+		for(int y = 0; y < 8; y++) {//Traversing vertically(rows)
+			for(int x = 0; x < 8; x++) {//Traversing horizontally(columns)
+				System.out.print("|" + board[x][y]);//Print data at j, i
+				if(x == 7)
 					System.out.print("|");//Print ending "|" in last column
 			}
 			System.out.print("\n");//New row
