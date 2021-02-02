@@ -16,8 +16,8 @@ Chess Class
 		validates specific move for each piece
 	printBoard()
 		prints "|" and "_" to make board
-		each peice is just a char 'p' 'k' ...
+		each piece is just a char 'p' 'k' ...
 	checkMate()
-		checks if king is checked by any peice, if so, calls checkCheckMate
-		if king is not checked, makes sure there is atleast one possible move
-		where king would not be in check
+		checks if king is checked by any piece, if so, calls checkCheckMate
+		if king is not checked, makes sure there is at least one possible
+		move where king would not be in check
